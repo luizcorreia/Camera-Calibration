@@ -64,7 +64,7 @@ namespace SomeCalibrations
             //set up cature as normal
             try
             {
-                _capture = new Capture("http://192.168.1.103/axis-cgi/mjpg/video.cgi?.mjpg");
+                _capture = new Capture();
                 _capture.ImageGrabbed += ProcessFrame;
                 _capture.Start();
             }
